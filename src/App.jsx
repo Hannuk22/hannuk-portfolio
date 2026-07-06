@@ -492,10 +492,10 @@ export default function HannukPortfolio() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
             {[
-              { label: "Email", value: "your@email.com", icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22,6 12,13 2,6" },
-              { label: "GitHub", value: "github.com/hannuk", icon: null },
+              { label: "mail", value: "enochangbashim5@gmail.com", icon: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22,6 12,13 2,6" },
+              { label: "GitHub", value: "github.com/Hannuk22", icon: null },
               { label: "LinkedIn", value: "linkedin.com/in/hannuk", icon: null },
-              { label: "Location", value: "Nigeria · Open to UK", icon: null },
+              { label: "Location", value: "Nigeria · Open to Relocate", icon: null },
             ].map((c, i) => (
               <div key={i} style={{
                 border: "0.5px solid #1a1a1a",
@@ -519,7 +519,7 @@ export default function HannukPortfolio() {
           <span style={{ fontSize: 9, color: "#333", letterSpacing: 1 }}>© 2026 Enoch Angbashim</span>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#333" }} />
-            <span style={{ fontSize: 9, color: "#333", letterSpacing: 1 }}>Lagos, Nigeria</span>
+            <span style={{ fontSize: 9, color: "#333", letterSpacing: 1 }}>Nigeria</span>
           </div>
           <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 11, color: GOLD, letterSpacing: 3 }}>HANNUK</span>
         </footer>
