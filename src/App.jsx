@@ -28,6 +28,15 @@ const projects = [
     stack: ["C#", "Java", "Data Management"],
     note: "Academic focus ✦",
   },
+  {
+    id: "07",
+    title: "FashionFlow API",
+    desc: "Spring Boot REST API for a fashion catalogue. Features JWT authentication, product and collection management, PostgreSQL persistence, and role-based access control.",
+    stack: ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT", "Maven"],
+    note: "Backend API · Dark Couture Edition ✦",
+    liveUrl: "https://fashionflow-production.up.railway.app/api/products",
+    githubUrl: "https://github.com/Hannuk22/fashionflow",
+  },
 ];
 
 function PaperTag({ children, rotate = -1.5, style = {} }) {
@@ -453,6 +462,28 @@ export default function HannukPortfolio() {
                     }}>{t}</span>
                   ))}
                 </div>
+                {(p.liveUrl || p.githubUrl) && (
+                  <div style={{ display: "flex", gap: 12, marginTop: 16 }}>
+                    {p.liveUrl && (
+                      <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" style={{
+                        fontSize: 11, color: GOLD, fontFamily: "'Space Mono', monospace",
+                        letterSpacing: 1, textDecoration: "none",
+                        border: `0.5px solid ${GOLD}`, padding: "6px 12px", borderRadius: 4,
+                      }}>
+                        LIVE DEMO →
+                      </a>
+                    )}
+                    {p.githubUrl && (
+                      <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" style={{
+                        fontSize: 11, color: "#999", fontFamily: "'Space Mono', monospace",
+                        letterSpacing: 1, textDecoration: "none",
+                        border: "0.5px solid #333", padding: "6px 12px", borderRadius: 4,
+                      }}>
+                        GITHUB →
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             ))}
           </div>
